@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        - Klasser og M3-ting
+          - klasser
+          - komponenter
+        - Callbacks og asynkron
+        - Algoritmer og datastrukturer 
+        
+        - (HTML tables)
+        - Vue
+     -->
+
+    <script>
+        // terje = {
+        //     name: 'Terje',
+        //     show: function () {
+        //         console.log(''.padEnd(this.name.length + 4, '*'));
+        //         console.log(this.name);
+        //         console.log(''.padEnd(this.name.length + 4, '*'));
+        //     }
+        // }
+
+        class Person {
+            #name;
+
+            constructor(name){
+                this.#name = name;
+            }
+
+            show() {
+                console.log(''.padEnd(this.#name.length + 4, '*'));
+                console.log(this.#name);
+                console.log(''.padEnd(this.#name.length + 4, '*'));
+            }
+
+            getName(){
+                return this.#name;
+            }
+        }
+
+        let terje = new Person('Terje');
+        terje.show();
+
+        let eskil = new Person('Eskil');
+        eskil.show();
+    </script>
+</body>
+
+</html>
